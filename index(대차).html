@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        <title>KAIST CCE WEB TEAM IDEAl</title>
+        <mata charset="utf-8"></mata>
+        <link rel="stylesheet" href="index(대차).css">
+        <style>
+            #overlap {
+                display:none;
+                width: 595px;
+              height: 200px;
+              background-color:skyblue;
+
+            }
+            #overlap0 {
+                display:none;
+                width: 510px;
+              height: 200px;
+              background-color:skyblue;
+
+            }
+            #overlap1 {
+                display:none;
+                width: 580px;
+              height: 200px;
+              background-color:skyblue;
+
+            }
+            #container {
+                display:inline;
+            }
+
+        </style>
+    </head>
+    <body>
+        <a href="index(대차).html"><h1>IDEAl</h1></a>
+            <div style="display:grid; grid-template-columns: 150pt 2fr 3fr ">
+                <div style="border-right: 10px mediumturquoise ridge; 
+                width: 120px;
+                position: relative;
+                top: 20px;
+                left:20px;
+                background-color: rgba(0, 0, 0, 0)">
+                    <center>
+                        <img src="4.png" width="36px"> <br> <br>
+                        <a href="index(대차).html"><img src="5.png" width="36px"></a> <br> <br>
+                        <img src="6.png" width="36px">
+                    </center>
+                </div>
+                <div style="font-size:30px">    
+                
+                <div id="container">
+                    <button class="button" onclick=
+                     "document.querySelector('overlap');
+                    overlap.style.display='inline-block';
+                    position: fixed;
+
+                    ">이용방법소개</button>
+
+                    <button class="button" onclick=
+                    "document.querySelector('overlap0');
+                   overlap0.style.display='inline-block';
+                   position: fixed;
+                   ">대차교류</button>
+
+                   <button class="button" onclick=
+                   "document.querySelector('overlap1');
+                  overlap1.style.display='inline-block';
+                  position: fixed;
+                  ">Q&A 및 신고</button>
+                </div>
+
+
+                    <div id = "overlap"
+                    onclick="
+                      document.querySelector('overlap');
+                      overlap.style.display='none';">                    
+                        <a href="이용방법소개.html">
+                            이용방법소개
+                        </a>                    
+                    </div>
+
+                   <div id = "overlap0"
+                   onclick="
+                     document.querySelector('overlap0');
+                     overlap0.style.display='none';">
+                       <a href="대차교류1.html">
+                           대차교류
+                       </a>
+                   </div>
+
+                   <div id = "overlap1"
+                   onclick="
+                     document.querySelector('overlap1');
+                     overlap1.style.display='none';">
+                       <a href="Q&A 및 신고.html">
+                           Q&A 및 신고
+                       </a>
+                   </div>
+
+
+                    <section id="banner">
+
+                    <video autoplay="" loop="" muted="" playsinline="" src="로고영상.mp4"></video></section>
+                     
+                                <img src="1.jpg" width="560px">
+                                <img src="2.jpg" width="560px">
+                                <img src="3.jpg" width="560px">     
+                    
+                </div>
+            </div>    
+    </body>
+</html>
